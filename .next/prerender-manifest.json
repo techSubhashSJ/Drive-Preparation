@@ -1,0 +1,149 @@
+{
+  "version": 3,
+  "routes": {
+    "/404": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/404.json"
+    },
+    "/": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/index.json"
+    },
+    "/login": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/login.json"
+    },
+    "/next": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/next.json"
+    },
+    "/react": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/react.json"
+    },
+    "/sp": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/sp.json"
+    },
+    "/spa": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/spa.json"
+    },
+    "/dog": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/dog.json"
+    },
+    "/cat": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/cat.json"
+    },
+    "/cup": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/cup.json"
+    },
+    "/atharva": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/atharva.json"
+    },
+    "/dell": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/dell.json"
+    },
+    "/abhijeet": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/abhijeet.json"
+    },
+    "/mobile": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/mobile.json"
+    },
+    "/subhash": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/subhash.json"
+    },
+    "/test-page": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/test-page.json"
+    },
+    "/stories": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/stories.json"
+    },
+    "/inspiration": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/inspiration.json"
+    },
+    "/memories": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/memories.json"
+    },
+    "/special-journeys": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/special-journeys.json"
+    },
+    "/blog": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/blog.json"
+    },
+    "/child-two": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/child-two.json"
+    },
+    "/child-one": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/child-one.json"
+    },
+    "/privacy-policy": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/privacy-policy.json"
+    },
+    "/about": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/about.json"
+    },
+    "/about/sample-page": {
+      "initialRevalidateSeconds": 1,
+      "srcRoute": "/[...slug]",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/about/sample-page.json"
+    }
+  },
+  "dynamicRoutes": {
+    "/[...slug]": {
+      "routeRegex": "^/(.+?)(?:/)?$",
+      "dataRoute": "/_next/data/qUuWxvZ2xshDLkfUYl3Ju/[...slug].json",
+      "fallback": null,
+      "dataRouteRegex": "^/_next/data/qUuWxvZ2xshDLkfUYl3Ju/(.+?)\\.json$"
+    }
+  },
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "3b31a632d98702d46375189b69d8d04d",
+    "previewModeSigningKey": "13fc9467deb0b07eafd416edc100a73fbae3da22b5d1acad3febc97211bcf65c",
+    "previewModeEncryptionKey": "6bdb4072f21597dac26a23c4edd6403dfbac6448cd2388d982b2bbc18bb87bb6"
+  }
+}
