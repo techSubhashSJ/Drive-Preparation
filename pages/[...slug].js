@@ -5,7 +5,10 @@ import client from "../src/apollo/client";
 import Layout from "../src/components/layout";
 import { GET_PAGE } from "../src/queries/pages/getPage";
 import { GET_PAGES_URI } from "../src/queries/pages/getPages";
-import isCustomPageUri, { FALLBACK, handleRedirectsAndReturnData } from "../src/utils/slugs";
+import isCustomPageUri, {
+  FALLBACK,
+  handleRedirectsAndReturnData,
+} from "../src/utils/slugs";
 
 const Page = ({ data }) => {
   const router = useRouter();
@@ -16,7 +19,11 @@ const Page = ({ data }) => {
     return <div>Loading...</div>;
   }
 
-  return <Layout data={data}>{router?.query?.slug.join("/")}</Layout>;
+  return (
+    <Layout data={data}>
+      <div>{router?.query?.slug.join("/")}</div>
+    </Layout>
+  );
 };
 
 export default Page;
@@ -63,7 +70,6 @@ export async function getStaticPaths() {
       });
     }
   });
-  console.log(pathsData.map(path => path.params.slug));
   return {
     paths: pathsData,
     fallback: FALLBACK,

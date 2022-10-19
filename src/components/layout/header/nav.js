@@ -52,11 +52,22 @@ const Nav = ({ headerMenus, header }) => {
           <div className="text-sm lg:flex-grow">
             {headerMenus?.map((menu) => (
               <Link href={menu?.node?.path} key={menu?.node?.id}>
-                <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                <a
+                  className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                  data-cy="nav-item"
+                >
                   {menu?.node?.label}
                 </a>
               </Link>
             ))}
+            <Link href="/news">
+              <a
+                className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                data-cy="nav-item"
+              >
+                News
+              </a>
+            </Link>
           </div>
         ) : null}
 

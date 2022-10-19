@@ -44,9 +44,7 @@ const Login = ({ data }) => {
       })
         .then((data) => {
           setLoading(false);
-          console.log("DATA", data);
           const { success } = data?.data ?? {};
-          console.log(success);
           // If its a preview request
           if (success && postType && previewPostId) {
             const previewUrl = getPreviewRedirectUrl(postType, previewPostId);

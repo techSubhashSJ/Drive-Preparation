@@ -4,7 +4,7 @@ export const FALLBACK = "blocking";
 export const PAGES_COUNT = 100;
 
 const isCustomPageUri = (uri) => {
-  const pagesToExclude = ["/"];
+  const pagesToExclude = ["/", "/blog/", "/blog/page"];
   return pagesToExclude.includes(uri);
 };
 
@@ -18,14 +18,14 @@ export const handleRedirectsAndReturnData = (
   isPreview = false,
   loginRedirectURL = ""
 ) => {
-  // if (isPreview && null === data?.[field]) {
-  //   return {
-  //     redirect: {
-  //       destination: loginRedirectURL || "/",
-  //       statusCode: 307,
-  //     },
-  //   };
-  // }
+  if (isPreview && null === data?.[field]) {
+    return {
+      redirect: {
+        destination: loginRedirectURL || "/",
+        statusCode: 307,
+      },
+    };
+  }
 
   if (_.isEmpty(data)) {
     return {
@@ -44,4 +44,13 @@ export const handleRedirectsAndReturnData = (
   }
 
   return defaultProps;
+};
+
+export const getLoginPreviewRedirectUrl = (
+  postType = "",
+  previewPostId = ""
+) => {
+  return `/login/?postType=${postType || ""}&previewPostId=${
+    previewPostId || ""
+  }`;
 };
